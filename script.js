@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         navLinks.classList.toggle("active");
     });
 });
-const apiURL = "http://makeup-api.herokuapp.com/api/v1/products.json";
+const apiURL = "https://makeup-api.herokuapp.com/api/v1/products.json";
 let allProducts = []; // Store all products globally
 
 // Fetch products from the API
