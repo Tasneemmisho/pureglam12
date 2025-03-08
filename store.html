@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureGlam - Store</title>
+    <link rel="stylesheet" href="store.css">
+    <script src="https://kit.fontawesome.com/a5046cba99.js" crossorigin="anonymous"></script> <!--for the icons-->
+    <script defer src="script.js"></script>
+</head>
+<body class="bodystore">
+    <header>
+        <div class="logo">
+            <h1>PureGlam</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="bot.html">Chatbot</a></li>
+                <li><a href="cart.html"><i class='fas fa-shopping-cart'></i></a></li>
+                <li><a href="wishlist.html"><i class='fas fa-heart'></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Tag Filter-->
+    <div class="dropdown">
+        <button class="dropbtn">Filter by Tag</button>
+        <section class="dropdown-content">
+            <a href="#" onclick="filterbytag('all')">Show All</a>
+            <a href="#" onclick="filterbytag('Vegan')">Vegan</a>
+            <a href="#" onclick="filterbytag('cruelty free')">Cruelty-Free</a>
+            <a href="#" onclick="filterbytag('oil free')">Oil-Free</a>
+            <a href="#" onclick="filterbytag('Gluten Free')">Gluten-Free</a>
+            <a href="#" onclick="filterbytag('silicone free')">Silicone-Free</a>
+            <a href="#" onclick="filterbytag('water free')">Water-Free</a>
+            <a href="#" onclick="filterbytag('alcohol free')">Alcohol-Free</a>
+        </section>
+    </div>
+    <!--Search Bar-->
+    <div id="search-container">
+    <input type="text" id="search-bar" placeholder="Search for products..." onkeyup="filterproducts()"> 
+    </div> 
+    <!--Price filter-->
+    <div class="price-slider">
+        <label for="pricerange">Price Range: $<span id="minprice">0</span> - $<span id="maxprice">1000</span></label>
+        <input type="range" id="pricerangemin" min="0" max="1000" step="5" value="0" oninput="updatepricerange()">
+        <input type="range" id="pricerangemax" min="0" max="1000" step="5" value="1000" oninput="updatepricerange()">
+        <button onclick="filterbyprice()">Apply</button>
+    </div>
+    <!--Products Section-->
+    <div id="products"></div>
+    <footer>
+        <p>&copy; 2025 PureGlam. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureGlam - Wishlist</title>
+    <link rel="stylesheet" href="bot.css">
+    <script src="https://kit.fontawesome.com/a5046cba99.js" crossorigin="anonymous"></script>
+    <script src="bot.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PureGlam</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="bot.html">Chatbot</a></li>
+                <li><a href="cart.html"><i class='fas fa-shopping-cart'></i></a></li>
+                <li><a href="wishlist.html"><i class='fas fa-heart'></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="chat-container">
+            <div class="chat-header"> <h2>AI Chatbot</h2></div>
+            <!--Initiator message-->
+            <div class="chat-box" id="chat-box">
+                <p class="bot-message">Hello! How can I assist you today?</p>
+            </div>
+            <!--User Input-->
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <p>&copy; 2025 PureGlam. All Rights Reserved.</p>
+    </footer>
+    </body>
+    </html>

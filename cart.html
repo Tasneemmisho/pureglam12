@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a5046cba99.js" crossorigin="anonymous"></script>
+    <title>PureGlam - Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js"></script>
+</head>
+<header>
+    <div class="logo">
+        <h1>PureGlam</h1>
+    </div>
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="bot.html">Chatbot</a></li>
+            <li><a href="cart.html"><i class='fas fa-shopping-cart'></i></a></li>
+            <li><a href="wishlist.html"><i class='fas fa-heart'></i></a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <h2>Shopping Cart</h2>
+    <main>
+        <!--Cart Items details-->
+        <div id="cart-items"></div>
+        <!--Total Price-->
+        <div id="total-price"></div>
+        <!--Cart actions (clear btn & a)-->
+        <div id="cart-actions">
+        <button onclick="clearCart()">Clear Cart</button>
+        <a href="index.html">Back to Shop</a>
+        </div>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <p>&copy; 2025 PureGlam. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

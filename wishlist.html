@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureGlam - Wishlist</title>
+    <link rel="stylesheet" href="wishlist.css">
+    <script src="https://kit.fontawesome.com/a5046cba99.js" crossorigin="anonymous"></script>
+    <script src="wishlist.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PureGlam</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="bot.html">Chatbot</a></li>
+                <li><a href="cart.html"><i class='fas fa-shopping-cart'></i></a></li>
+                <li><a href="wishlist.html"><i class='fas fa-heart'></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Your Wishlist</h2>
+        <!--Wishlist Items-->
+        <div id="wishlist-items"></div>
+        <!--Wishlist actions (clear btn & a)-->
+        <div id="wishlist-actions">
+            <button onclick="clearWishlist()">Clear Wishlist</button>
+            <a href="store.html">Back to Shop</a>
+        </div>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <p>&copy; 2025 PureGlam. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
